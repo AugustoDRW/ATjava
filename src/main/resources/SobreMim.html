@@ -1,10 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Cart Infnet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+
+    }
+    h1 {
+      background-color: #003366;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      margin: 0;
+    }
+    h2 {
+      background-color: #006699;
+      color: white;
+      padding: 10px;
+      margin: 0;
+      text-align: center;
+    }
+    p {
+      padding: 10px;
+      margin: 0;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      border-bottom: 1px solid darkcyan;
+      box-shadow: antiquewhite;
+    }
+    a {
+      padding-right: 50px;
+      padding-left: 5px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      text-decoration: none;
+      color: black;
+    }
+    .img {
+      display: flex;
+      justify-content: center;
+      padding-top: 10px;
+      background-image: url("https://as1.ftcdn.net/v2/jpg/04/32/68/44/1000_F_432684499_j85lgo0wF2010vqu1qOJ8GbNtlmpaxJ9.jpg");
+
+    }
+    .footer {
+      position: absolute;
+      bottom: 0;
+      background-color:#006699;
+      color: white;
+      padding: 20px;
+      padding-top: 10px;
+      width: 97.9%;
+    }
+    .footer a{
+      color: white;
+    }
+  </style>
 </head>
 <body>
-$END$
-</body>
+<nav><a href="http://localhost:8080">Home</a>
+  <a href="http://localhost:8080/usuario">Usuarios</a>
+  <a href="http://localhost:8080/corrida/listar">Corridas</a>
+  <a href="http://localhost:8080/Carro/listar">Carros</a>
+  <a href="http://localhost:8080/Narrador/listar">Narradores</a>
+  <a href="http://localhost:8080/Piloto/listar">Pilotos</a>
+  <a href="http://localhost:8080/Marca/listar">Marcas</a>
+  <a href="/Respostas">Informações</a>
+  <a href="/SobreMim">Sobre Mim</a>
+
+
+
+</nav>
+<h2 style="justify-content:center"></h2>
+<div class="img"><img src="https://storage.googleapis.com/media.landbot.io/114209/channels/YR29NUH59N5ADPK2B5V2WDBEGNBFULPF.png" width="300px"></div></body>
+<h2 style="justify-content:center">Sobre mim</h2>
+<p>Meu nome é Augusto do Couto Espessoto, estou no meu segundo semestre da faculdade de engenharia da computação no instituto Infnet, esta aplicação é meu AT de Desenvolvimento de Serviços Web e Testes com Java regida pelo professor Elberth Lins Costa de Moraes
+infelizmente ainda não trabalho exatamente na área do curso, sou auxiliar de TI em uma escola da minha cidade, ainda estou procurando uma vaga como dev ou algo na área de altomação que me chama bastante atenção</p>
+<ul>
+  <li>
+    <a href="https://github.com/AugustoDRW" target="_blank">Github</a>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/in/augusto-do-couto-espessoto-0ab389270/" target="_blank">Meu Linkedin</a>
+  </li>
+</ul>
+
+<h2>Informações do projeto</h2>
+<p>Este projeto tem a finalidade de servir como um site de ingressos e informações sobre corridas, com abas para identificar os narradores, corredores, carros, corridas e as marcas que patrocinam os carros
+neste contexto, as relações entre eles são:</p>
+<ul>
+  <li>
+    1 Carro pode ter 1 Piloto
+  </li>
+  <li>
+    1 Carro pode ter N Marcas
+  </li>
+  <li>
+    N Carro podem particiar de N Corridas
+  </li>
+  <li>
+    1 Narrador pode particiar de N Corridas
+  </li>
+</ul>
+<div class="footer"><a href="https://github.com/AugustoDRW/ATjava" target="_blank">Codigo fonte do Site no Github</a></div>
+
 </html>

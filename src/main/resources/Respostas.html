@@ -1,10 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <title>Cart Infnet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        h1 {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+        }
+        h2 {
+            background-color: #006699;
+            color: white;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+        }
+        p {
+            padding: 10px;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            border-bottom: 1px solid darkcyan;
+            box-shadow: antiquewhite;
+        }
+        a {
+            padding-right: 50px;
+            padding-left: 5px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-decoration: none;
+            color: black;
+        }
+        .img {
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            background-image: url("https://as1.ftcdn.net/v2/jpg/04/32/68/44/1000_F_432684499_j85lgo0wF2010vqu1qOJ8GbNtlmpaxJ9.jpg");
+
+        }
+        .footer {
+            background-color:#006699;
+            color: white;
+            padding: 20px;
+            padding-top: 10px;
+            width: 97.9%;
+        }
+        .footer a{
+            color: white;
+        }
+    </style>
 </head>
 <body>
-$END$
-</body>
+<nav><a href="http://localhost:8080">Home</a>
+    <a href="http://localhost:8080/usuario">Usuarios</a>
+    <a href="http://localhost:8080/corrida/listar">Corridas</a>
+    <a href="http://localhost:8080/Carro/listar">Carros</a>
+    <a href="http://localhost:8080/Narrador/listar">Narradores</a>
+    <a href="http://localhost:8080/Piloto/listar">Pilotos</a>
+    <a href="http://localhost:8080/Marca/listar">Marcas</a>
+    <a href="/Respostas">Informações</a>
+    <a href="/SobreMim">Sobre Mim</a>
+
+
+</nav>
+<h2 style="justify-content:center"></h2>
+<div class="img"><img src="https://storage.googleapis.com/media.landbot.io/114209/channels/YR29NUH59N5ADPK2B5V2WDBEGNBFULPF.png" width="300px"></div></body>
+<h2 style="justify-content:center"></h2>
+
+<h3>Compreensão do Spark Java:</h3>
+<p>O Spark Java é um framework web leve e simples para criação de aplicativos web em
+    Java sendo principalmente usado para o desenvolvimento de APIs RESTful, dentre suas várias vantagens podem ser citadas:
+    simplicidade e minimalismo, fácil configuração, independente de servidores e aplicativos externos e sua alta flexibilidade.
+</p>
+<h3>Comparação com Outros Frameworks:</h3>
+<p>O Spark quando comparado a outra API que utilizamos ao decorrer do trimestre (SpringBoot) ele se destaca devido a sua simplicidade na hora das atribuições, mas,
+    em contrapartida, se torna limitado na hora de compara-lo no ponto de vista profissional.
+    O que não o torna necessariamente pior nesse sentido, já que ele pode ser muito útil na criação de aplicativos simples. </p>
+<h3>Escalabilidade e Desempenho:</h3>
+<p>O Spark Java suporta operações assíncronas, o que permite lidar com um grande número de solicitações simultâneas de forma eficiente, garantindo
+    uma boa capacidade de resposta e escalabilidade. Devido à sua arquitetura leve e minimalista, o Spark Java impõe pouca sobrecarga ao sistema,
+    o que torna ele muito mais rápido que as outras APIs e devido a sua facilidade ele se torna muito escalável e alterável dependendo da situação. </p>
+<h3>Facilidade de Uso:</h3>
+<p>O Spark possui uma API limpa e intuitiva, além de ser muito fácil de se entender, tornando o desenvolvimento mais produtivo, não possui
+    a necessidade de configurações em arquivos externos, pois tudo é feito diretamente por meio de programação e com isso torna o desenvolvimento
+    de aplicações muito mais rápido.</p>
+<h3>Observações:</h3>
+<p>Infelizmente, não consegui fazer a atribuição no postman, tentei usar o Json mas não funcionou, devido a isso as implementações são feitas diretamente pelos links:
+    <br>/corrida/:local/incluir <br>
+    /Narrador/:nome/incluir  <br>
+    /Carro/:nome/incluir <br>
+    /Marca/:nome/incluir <br>
+    /Piloto/:nome/incluir <br>
+</p>
+<div class="footer"><a href="https://github.com/AugustoDRW/ATjava" target="_blank">Codigo fonte do Site no Github</a></div>
+
+
 </html>
