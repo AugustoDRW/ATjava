@@ -27,28 +27,28 @@ public class Main {
 
         //Corridas
         Spark.get("/corrida/listar", CorridaController.obterLista);
-        Spark.get("/corrida/:local/incluir", CorridaController.incluir);
-        Spark.get("/corrida/:id/deletar", CorridaController.deletar);
+        Spark.post("/corrida/:local/incluir", CorridaController.incluir);
+        Spark.delete("/corrida/:id/deletar", CorridaController.deletar);
         Spark.get("/corrida/:id", CorridaController.obterUnico);
         //Narrador
         Spark.get("/Narrador/listar", NarradorController.obterLista);
-        Spark.get("/Narrador/:nome/incluir", NarradorController.incluir);
-        Spark.get("/Narrador/:id/deletar", NarradorController.deletar);
+        Spark.post("/Narrador/:nome/incluir", NarradorController.incluir);
+        Spark.delete("/Narrador/:id/deletar", NarradorController.deletar);
         Spark.get("/Narrador/:id", NarradorController.obterUnico);
         //Carro
         Spark.get("/Carro/listar", CarroController.obterLista);
-        Spark.get("/Carro/:nome/incluir", CarroController.incluir);
-        Spark.get("/Carro/:id/deletar", CarroController.deletar);
+        Spark.post("/Carro/:nome/incluir", CarroController.incluir);
+        Spark.delete("/Carro/:id/deletar", CarroController.deletar);
         Spark.get("/Carro/:id", CarroController.obterUnico);
         //Marca
         Spark.get("/Marca/listar", MarcaController.obterLista);
-        Spark.get("/Marca/:nome/incluir", MarcaController.incluir);
-        Spark.get("/Marca/:id/deletar", MarcaController.deletar);
+        Spark.post("/Marca/:nome/incluir", MarcaController.incluir);
+        Spark.delete("/Marca/:id/deletar", MarcaController.deletar);
         Spark.get("/Marca/:id", MarcaController.obterUnico);
         //Piloto
         Spark.get("/Piloto/listar", PilotoController.obterLista);
-        Spark.get("/Piloto/:nome/incluir", PilotoController.incluir);
-        Spark.get("/Piloto/:id/deletar", PilotoController.deletar);
+        Spark.post("/Piloto/:nome/incluir", PilotoController.incluir);
+        Spark.delete("/Piloto/:id/deletar", PilotoController.deletar);
         Spark.get("/Piloto/:id", PilotoController.obterUnico);
 
 
